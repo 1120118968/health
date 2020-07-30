@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@mipmap/bg6"
+    tools:context=".MainActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:orientation="horizontal"
+            >
+
+
+
+            <Button
+                android:id="@+id/bj"
+                android:layout_width="55dp"
+                android:layout_height="80dp"
+                android:background="#ABD6E0"
+                android:text="北京" />
+
+            <Button
+                android:id="@+id/sh"
+                android:layout_width="55dp"
+                android:layout_height="80dp"
+                android:background="#ABD6E0"
+                android:text="上海" />
+
+            <Button
+                android:id="@+id/heb"
+                android:layout_width="55dp"
+                android:layout_height="80dp"
+                android:background="#ABD6E0"
+                android:text="哈尔滨" />
+            <Button
+                android:id="@+id/cc"
+                android:layout_width="55dp"
+                android:layout_height="80dp"
+                android:background="#ABD6E0"
+                android:text="长春" />
+
+            <Button
+                android:id="@+id/sy"
+                android:layout_width="55dp"
+                android:layout_height="80dp"
+                android:background="#ABD6E0"
+                android:text="沈阳" />
+            <Button
+                android:id="@+id/gz"
+                android:layout_width="55dp"
+                android:layout_height="80dp"
+                android:background="#ABD6E0"
+                android:text="广州" />
+
+        </LinearLayout>
+        <WebView
+            android:id="@+id/webView1"
+             android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </WebView>
+
+    </LinearLayout>
+
+</RelativeLayout>

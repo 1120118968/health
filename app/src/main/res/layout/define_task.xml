@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_j"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_j">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="10dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_music_info_cover"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="@null"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_category_12"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@color/alpha_50_black"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_category_17"
+                    android:layout_gravity="right|bottom"/>
+            </FrameLayout>
+
+
+                <EditText
+                    android:id="@+id/zidingyi_qidian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="输入起点"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/zidingyi_zhongdian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="输入终点"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/zidingyi_changdu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="输入长度"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/zidingyi_bushu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="输入步数"
+                    android:textSize="16sp" />
+
+
+                <EditText
+                    android:id="@+id/zidingyi_reliang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="消耗热量"
+                    android:textSize="16sp" />
+
+
+
+                <EditText
+                    android:id="@+id/zidingyi_chengji"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="今日成绩"
+                    android:textSize="16sp" />
+
+
+
+                <EditText
+                    android:id="@+id/zidingyi_qita"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="其他"
+                    android:textSize="16sp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cal"
+                android:text="计算"
+                android:background="@color/light_blue"
+                android:onClick="cal"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

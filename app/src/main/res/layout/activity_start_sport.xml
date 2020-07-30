@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg7"
+    tools:context=".StartSportActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#87CEFA"
+            android:text="热力图"
+            android:id="@+id/reli">
+
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="交通图"
+            android:background="#87CEFA"
+            android:id="@+id/jiaotong">
+
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="卫星图"
+            android:background="#87CEFA"
+            android:id="@+id/weixing">
+
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="路况图"
+            android:background="#87CEFA"
+            android:id="@+id/lukuang">
+
+        </Button>
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="定位中。。。"
+        android:id="@+id/showData"/>
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

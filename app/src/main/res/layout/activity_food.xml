@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg6"
+    tools:context=".FoodActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="菜单列表"
+            android:textSize="28dp"
+            android:textColor="@color/priority_yellow"
+            android:textAlignment="center">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <AutoCompleteTextView
+                android:id="@+id/mAuto"
+                android:layout_width="0dp"
+                android:hint="请输入您要搜索的食物"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:completionThreshold="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:onClick="search"
+                android:text="开始搜索"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="0.3"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/yt"
+            android:background="@mipmap/yty"
+
+            >
+
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/zk"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="0.3"
+            android:background="@mipmap/zk"
+            >
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@mipmap/yte"
+            android:id="@+id/yt2"
+
+            android:layout_weight="0.3"
+
+
+            >
+
+        </Button>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/mjl"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="0.3"
+           android:background="@mipmap/mjl">
+
+        </Button>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:background="@mipmap/m"
+            android:layout_height="80dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="0.3"
+            android:id="@+id/m"
+
+           >
+
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:background="@mipmap/yd"
+            android:layout_height="80dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/sport"
+            android:layout_weight="0.3"
+
+            >
+
+        </Button>
+    </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

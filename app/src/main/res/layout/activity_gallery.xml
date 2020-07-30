@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="食物热量介绍"
+        android:textSize="32dp"
+        android:textStyle="italic"
+
+
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"/>
+
+    <com.example.mobilehomework.SpeedRecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/priority_blue"
+        android:text="各种食物列表"
+        android:id="@+id/foodList">
+
+    </Button>
+
+
+</LinearLayout>

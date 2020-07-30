@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg11"
+    tools:context=".ZkListActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/ll2">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_zk"
+        android:background="#228f8d"
+        android:text="查询食物列表"
+        android:textColor="@color/priority_yellow"
+        android:textSize="20dp"
+        >
+
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/yt2_list"
+        android:background="@color/light_blue"
+        android:textSize="20dp"
+        android:text="中快餐厅列表"
+        android:textColor="@color/priority_yellow">
+
+    </Button>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

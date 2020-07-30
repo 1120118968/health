@@ -1,0 +1,159 @@
+<resources>
+    <!-- Base application theme. -->
+
+
+    <style name="CityPickerStyle" parent="AlertDialog.AppCompat">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="DefaultCityPickerAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/cp_push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/cp_push_bottom_out</item>
+    </style>
+
+    <style name="DefaultCityPickerTheme" parent="AppTheme">
+        <item name="cpCancelTextSize">@dimen/cp_cancel_text_size</item>
+        <item name="cpCancelTextColor">@color/cp_color_gray</item>
+
+        <item name="cpClearTextIcon">@mipmap/cp_icon_clear_all</item>
+        <item name="cpSearchTextSize">@dimen/cp_search_text_size</item>
+        <item name="cpSearchTextColor">@color/cp_color_gray_dark</item>
+        <item name="cpSearchHintText">@string/cp_search_hint_text</item>
+        <item name="cpSearchHintTextColor">@color/cp_color_gray_light</item>
+        <item name="cpSearchCursorDrawable">@color/cp_color_gray_dark</item>
+
+        <item name="cpListItemHeight">@dimen/cp_list_item_height</item>
+        <item name="cpListItemTextSize">@dimen/cp_list_item_text_size</item>
+        <item name="cpListItemTextColor">@color/cp_color_gray_deep</item>
+
+        <item name="cpEmptyIcon">@mipmap/cp_icon_empty</item>
+        <item name="cpEmptyIconWidth">@dimen/cp_empty_icon_width</item>
+        <item name="cpEmptyIconHeight">@dimen/cp_empty_icon_height</item>
+        <item name="cpEmptyText">@string/cp_no_result</item>
+        <item name="cpEmptyTextSize">@dimen/cp_empty_text_size</item>
+        <item name="cpEmptyTextColor">@color/cp_color_gray_deep</item>
+
+        <item name="cpGridItemBackground">@drawable/cp_grid_item_bg</item>
+        <item name="cpGridItemSpace">@dimen/cp_grid_item_space</item>
+
+        <item name="cpSectionHeight">@dimen/cp_section_height</item>
+        <item name="cpSectionTextSize">@dimen/cp_section_text_size</item>
+        <item name="cpSectionTextColor">@color/cp_color_gray</item>
+        <item name="cpSectionBackground">@color/cp_color_section_bg</item>
+
+        <item name="cpIndexBarTextSize">@dimen/cp_index_bar_text_size</item>
+        <item name="cpIndexBarNormalTextColor">@color/cp_color_gray</item>
+        <item name="cpIndexBarSelectedTextColor">@color/cp_color_gray_dark</item>
+
+        <item name="cpOverlayWidth">@dimen/cp_overlay_width</item>
+        <item name="cpOverlayHeight">@dimen/cp_overlay_height</item>
+        <item name="cpOverlayTextSize">@dimen/cp_overlay_text_size</item>
+        <item name="cpOverlayTextColor">@android:color/white</item>
+        <item name="cpOverlayBackground">@drawable/cp_overlay_bg</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="myStyle">
+        <item name = "android:layout_width">60dp</item>
+        <item name = "android:layout_height">50dp</item>
+        <item name = "android:textSize">20sp</item>
+        <item name = "android:gravity">center</item>
+        <item name="android:background">#FF4081</item>
+    </style>
+    <!--侧滑菜单分割线样式-->
+    <style name="ViewLineNav">
+        <item name="android:layout_height">1px</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/colorNavLine</item>
+    </style>
+
+    <!-- 深色下划线 -->
+    <style name="DeepUnderLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/grayLine</item>
+    </style>
+
+
+    <!-- 深色下划线 -->
+    <style name="DeepUnderLineDp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/grayLine</item>
+    </style>
+
+    <!-- 深色下划线 -->
+    <style name="DeepUnderLineSecond">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/grayLine</item>
+    </style>
+
+    <!-- 浅线水平全部分割 颜色深-->
+    <style name="divider_all_horizontal_transport">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.01dp</item>
+        <item name="android:background">@color/alpha_15_white</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- 浅线水平全部分割 颜色深-->
+    <style name="divider_all_vertical_transport">
+        <item name="android:layout_width">0.01dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/alpha_15_white</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <!--个人中心资料左边文字抽取-->
+    <style name="MeInfoTextLeftStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/blackText4</item>
+    </style>
+
+
+    <style name="MeInfoTextRightStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:drawableRight">@drawable/ic_back_right</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/blackText2</item>
+    </style>
+
+    <style name="WeightAttr">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/blackText</item>
+    </style>
+
+        <style name="noTitleDialog" parent="android:style/Theme.Dialog">
+            <item name="android:width">300dp</item>
+            <item name="android:height">40dp</item>
+            <item name="android:windowNoTitle">true</item>
+        </style>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+</resources>

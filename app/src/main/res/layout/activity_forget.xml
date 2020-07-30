@@ -1,0 +1,92 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg15"
+    tools:context=".ForgetActivity" >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="忘记密码"
+        android:id="@+id/btnbujige"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:background="#95C4DB"
+        />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="手机号:" />
+
+        <EditText
+            android:id="@+id/get_pn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="请输入您的手机号" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tableRow1"
+        >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="验证码:" />
+        <EditText
+            android:id="@+id/get_yzm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入验证码" />
+        <ImageView
+            android:id="@+id/img_yzm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </TableRow>
+
+    <Button
+        android:id="@+id/get_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+
+        android:text="获取验证码"
+
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:background="#ABD9E0" />
+
+    <Button
+        android:id="@+id/fg_next"
+        android:layout_width="226dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:text="下一步"
+
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:background="#abd9E0" />
+
+</TableLayout>

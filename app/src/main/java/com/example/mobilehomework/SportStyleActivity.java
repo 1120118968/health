@@ -45,11 +45,13 @@ public class SportStyleActivity extends AppCompatActivity {
         LinearLayout.LayoutParams layoutParams=new LinearLayout.LayoutParams(60,80);
         layoutParams.setMargins(0, 0, 5, 0);
 
+        int img[] = new int[imgViews.length];
         for(int i=0;i<imgViews.length;i++){
             imgViews[i]=new ImageView(this);
             imgViews[i].setId(imgIds.get(i));
             imgViews[i].setBackgroundResource(R.drawable.bg);
 
+            img[i] = imgIds.get(i);
 
             imgViews[i].setImageResource(imgIds.get(i));
             imgViews[i].setLayoutParams(layoutParams);
@@ -76,31 +78,32 @@ public class SportStyleActivity extends AppCompatActivity {
             setAlpha(imgViews);
             ((ImageView)v).setImageAlpha(255);
 
+            System.out.println(v.getId());
             switch (v.getId()){
-                case 0:
+                case 2131492906:
                     Toast.makeText(SportStyleActivity.this,"你选择的运动方式为乒乓球", Toast.LENGTH_LONG).show();
                     break;
-                case 1:
+                case 2131492907:
                     Toast.makeText(SportStyleActivity.this,"你选择的运动方式为冲浪", Toast.LENGTH_LONG).show();
                     break;
-                case 2:
-                    Toast.makeText(SportStyleActivity.this,"你选择的运动方式为骑自行车", Toast.LENGTH_LONG).show();
+                case 2131492908:
+                    Toast.makeText(SportStyleActivity.this,"你选择的运动方式为骑自行车", Toast.LENGTH_SHORT).show();
                     break;
-                case 3:
-                    Toast.makeText(SportStyleActivity.this,"你选择的运动方式为跑步", Toast.LENGTH_LONG).show();
+                case 2131492909:
+                    Toast.makeText(SportStyleActivity.this,"你选择的运动方式为跑步", Toast.LENGTH_SHORT).show();
                     break;
-                case 4:
-                    Toast.makeText(SportStyleActivity.this,"你选择的运动方式为散步", Toast.LENGTH_LONG).show();
+                case 2131492910:
+                    Toast.makeText(SportStyleActivity.this,"你选择的运动方式为散步", Toast.LENGTH_SHORT).show();
                     break;
-                case 5:
-                    Toast.makeText(SportStyleActivity.this,"你选择的运动方式为踢足球", Toast.LENGTH_LONG).show();
+                case 2131492911:
+                    Toast.makeText(SportStyleActivity.this,"你选择的运动方式为踢足球", Toast.LENGTH_SHORT).show();
                     break;
-                case 6:
-                    Toast.makeText(SportStyleActivity.this,"你选择的运动方式为滑雪", Toast.LENGTH_LONG).show();
+                case 2131492912:
+                    Toast.makeText(SportStyleActivity.this,"你选择的运动方式为滑雪", Toast.LENGTH_SHORT).show();
                     break;
 
-                default:
-                    Toast.makeText(SportStyleActivity.this,"你选择的运动方式为高尔夫球", Toast.LENGTH_LONG).show();
+                case 2131492913:
+                    Toast.makeText(SportStyleActivity.this,"你选择的运动方式为高尔夫球", Toast.LENGTH_SHORT).show();
                     break;
 
             }

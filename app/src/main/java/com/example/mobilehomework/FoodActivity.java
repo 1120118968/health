@@ -1,5 +1,6 @@
 package com.example.mobilehomework;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.ListAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,6 +29,7 @@ public class FoodActivity extends AppCompatActivity {
     private MyDataBaseHelper mHelper;
     private SQLiteDatabase mDB;
     private ArrayAdapter<String> adapter;
+    String input_string = " ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,9 +39,9 @@ public class FoodActivity extends AppCompatActivity {
         mHelper = new MyDataBaseHelper(this,"jibu_db",null,1);
         mDB = mHelper.getReadableDatabase();
         mAuto = findViewById(R.id.mAuto);
-        datas = getData();
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,datas);
-        mAuto.setAdapter(adapter);
+//        datas = getData();
+//        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,datas);
+//        mAuto.setAdapter(adapter);
         sport = findViewById(R.id.sport);
         sport.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,7 +97,7 @@ public class FoodActivity extends AppCompatActivity {
     }
     public List<String>getData(){
         List<String> contents = new ArrayList<String>();
-        Cursor result = mDB.rawQuery("select * from yt",null);
+        Cursor result = mDB.rawQuery("select * from yt where name  like ?", new String[]{input_string});
         while(result.moveToNext()){
             contents.add(result.getString(result.getColumnIndex("name")));
           //  contents.add(result.getString(result.getColumnIndex("kcal")));
@@ -103,18 +106,39 @@ public class FoodActivity extends AppCompatActivity {
     }
     public void search(View view){
         String input = mAuto.getText().toString();
-        if(input == null||"".equals(input.trim())){
+        if("".equals(input.trim())){
+
             AlertDialog.Builder builder=new AlertDialog.Builder(this);
             builder.setTitle("警告提示");
             builder.setMessage("请输入搜索关键字");
             builder.create().show();
         }else{
-            if(!datas.contains(input)){
-                mDB.execSQL("insert into m(name)values(?)",
-                        new String[]{input});
-                mAuto.setAdapter(adapter);
+                    input = input + "";
+                    input_string = "%"+input+"%";
+    //                mDB.execSQL("insert into m(name)values(?)",
+    //                        new String[]{input});
+                    datas = getData();
+                    String [] string = new String [datas.size()] ;
+                    datas.toArray(string);
+    //                adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,datas);
+    //
+    //                mAuto.setAdapter(adapter);
+
+                    AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                    builder.setTitle("搜索结果");
+
+                       builder.setSingleChoiceItems(string, -1, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+
+
+                        }
+                    });
+
+                    builder.show();
+
             }
-        }
+
     }
     protected void onDestroy(){
         if(mDB!=null){
